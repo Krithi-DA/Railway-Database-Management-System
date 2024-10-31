@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Passenger Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('book.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8); 
+             padding: 20px;
+            border-radius: 10px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            
+        }
+        .form-group label {
+            margin-right: 10px;
+            font-weight: bold;
+            flex: 0 0 auto; 
+        }
+        .form-group input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+            
+        }
+        .form-group select {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+        .form-group button {
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        margin-bottom: 50px;
+        border-radius: 9px;
+        background-color: darkgreen;
+        color:white;
+        font-weight:bold ;
+
+        }
+
+        h2{
+            color: darkgreen;
+        }
+        
+       
+        .form-group button:hover {
+            background-color: lightcyan;
+            text-align: center;
+            
+            
+        justify-content: center;
+        }
+        
+    
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2> Passenger Registration</h2>
+    <form action="Option.html" method="POST">
+
+<div class="form-group">
+            <input type="text" id="fname" name="Passenger_fname" placeholder="First Name" required style="font-style: italic; font-weight: bold;">
+        </div>
+        <div class="form-group">
+            <input type="text" id="mname" name="Passenger_minit" placeholder="Middle Name" style="font-style: italic; font-weight: bold;" >
+        </div>
+        <div class="form-group">
+            <input type="text" id="lname" name="Passenger_lname" placeholder="Last Name" style="font-style: italic; font-weight: bold;" >
+        </div>
+       
+        <div class="form-group">
+            <input type="text" id="Pno" name="Address" placeholder="Address" required style="font-style: italic; font-weight: bold;">
+        </div>
+        <div class="form-group">
+            <input type="text" id="Pno" name="Phone_Number" placeholder="Phone Number" required style="font-style: italic; font-weight: bold;">
+        </div>
+        <div class="form-group">
+            <input type="text" id="email" name="Email_id" placeholder="Email id" required style="font-style: italic; font-weight: bold;">
+        </div>
+        <div class="form-group">
+            <input type="text" id="pid" name="Passenger_id" placeholder="Passenger id" style="font-style: italic; font-weight: bold;" >
+        </div>
+
+        
+        <div class="form-group">
+            <button type="submit" >Register</button>
+        </div>
+
+    </form>
+
+
+</div>
+
+</body>
+</html>

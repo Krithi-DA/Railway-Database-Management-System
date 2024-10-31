@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Order</title>
+<style>
+           
+body 
+{
+        background-image: url('ticket.jpg'); 
+        background-size: cover;
+        background-position: center; 
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        margin: 0; 
+        padding: 0; 
+        background-repeat: no-repeat;
+    }
+    table 
+    {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td 
+    {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th 
+    {
+        background-color: #f2f2f2;
+    }
+    
+    .action-buttons
+     {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .action-buttons button
+    {
+        padding: 10px 20px;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px; 
+        background-color:gold;
+        color: black;
+        border-radius: 4px; 
+        cursor: pointer;
+        border: 2px solid black; 
+        border-radius: 4px; 
+        width: 200px; 
+    }
+</style>
+</head>
+<body>
+
+<h2>Food order Details</h2>
+
+<table id="stationTable">
+    <thead>
+        <tr>
+            <th>Order Number</th>
+            <th>Break fast</th>
+            <th>Quantity</th>
+            <th>Lunch</th>
+            <th>Quantity</th>
+            <th>Snack</th>
+            <th>Quantity</th>
+            <th>Dinner</th>
+            <th>Quantity</th>
+            <th>seat Number</th>
+            <th>Passenger id</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody> 
+</table>
+
+<div class="action-buttons">
+    <button onclick="addStation()">Order Here</button>
+</div>
+
+
+<script>
+
+    function addStation() 
+    {
+        window.location.href = "Food.html";
+    }
+    
+</script>
+
+</body>
+</html>

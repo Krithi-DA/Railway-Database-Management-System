@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticket form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('book.jpg');
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  select {
+    height: 36px;
+  }
+
+  button[type="submit"] {
+    background-color:darkgreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  h1 {
+        color: darkgreen 
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Book Here</h1>
+  <form action="ticketbook.php" method="Post">
+
+    <div class="form-group">
+        <label for="Station_Name">Passenger Firstname</label>
+        <input type="text" id="Station_Name" name="Passenger_fname" required><br><br>
+        
+    </div>
+
+    <div class="form-group">
+        <label for="Station_id">Passenger Middlename</label>
+        <input type="text" id="Station_id" name="Passenger_minit"><br><br>
+        
+    </div>
+
+    <div class="form-group">
+        <label for="Station_Location">Passenger Lastname</label>
+        <input type="text" id="Station_Location" name="Passenger_lname"><br><br>
+        
+    </div>
+
+    <div class="form-group">
+      <label for="Station_Name">From</label>
+      <input type="text" id="Station_Name" name="Start_Location" required ><br><br>
+      
+  </div>
+
+  <div class="form-group">
+    <label for="Station_Name">To</label>
+    <input type="text" id="Station_Name" name="Dest_Location" required><br><br>
+    
+</div>
+
+<div class="form-group">
+  <label for="Station_Name">Arrival Date</label>
+  <input type="date" id="Station_Name" name="Arrival_Date" required><br><br>
+  
+</div>
+
+<div class="form-group">
+  <label for="Station_Name">Arrival Time</label>
+  <input type="time" id="Station_Name" name="Arrival_Time"required><br><br>
+  
+</div>
+
+<div class="form-group">
+  <label for="Station_Name">Departure Date</label>
+  <input type="date" id="Station_Name" name="Departure_Date"required ><br><br>
+  
+</div>
+
+<div class="form-group">
+  <label for="Station_Name">Departure Time</label>
+  <input type="time" id="Station_Name" name="Departure_Time" required ><br><br>
+  
+</div>
+
+<div class="form-group">
+  <label for="Station_Name">Passenger Id</label>
+  <input type="text" id="Station_Name" name="Passenger_id"required ><br><br>
+  
+</div>
+
+
+<div class="form-group">
+  <label for="Station_Name">Seat Number</label>
+  <input type="text" id="Station_Name" name="Seat_Number" required><br><br>
+  
+</div>
+<div class="form-group">
+  <label for="Station_Name">Train No</label>
+  <input type="text" id="Station_Name" name="Train_No"required ><br><br>
+  
+</div>
+
+
+<div class="form-group">
+  <label for="Station_Name">Seat Type</label>
+  <input type="text" id="Station_Name" name="Seat_Type"required ><br><br>
+  
+</div>
+
+<div class="form-group">
+  <label for="Station_Name">Price</label>
+  <input type="number" id="Station_Name" name="Price" required><br><br>
+  
+</div>
+
+<div class="form-group">
+  <label for="Station_Name">Address</label>
+  <input type="text" id="Station_Name" name="Home_Location"required ><br><br>
+  
+</div>
+
+
+
+    <div class="form-group">
+        <label for="Phone_Number">Phone Number:</label>
+        <input type="text" id="Phone_Number" name="Phone_Number"required  ><br><br>
+    </div>
+
+    
+<div class="form-group">
+  <label for="Station_Name">Email Id</label>
+  <input type="text" id="Station_Name" name="Email_id" required><br><br>
+  
+</div>
+
+
+    <button type="submit" name="ticket">Submit</button>
+
+  </form>
+</div>
+
+</body>
+</html>

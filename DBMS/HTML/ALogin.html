@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Passenger Registration</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            background-image: url('Train.avif');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; 
+            margin: 0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container 
+        {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        
+        }
+        .form-group 
+        {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            
+        }
+        .form-group label 
+        {
+            margin-right: 10px;
+            font-weight: bold;
+            flex: 0 0 auto; 
+        }
+        .form-group input
+         {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            font-weight: bold;
+            
+        }
+        .form-group select
+         {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+        .form-group button
+         {
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 50px;
+            border-radius: 9px;
+            background-color: gold;
+            color:black;
+            font-weight:bold ;
+
+        }
+        
+       
+        .form-group button:hover 
+        {
+            background-color: lightcyan;
+            text-align: center;
+            justify-content: center;
+        }
+        
+    
+</style>
+</head>
+<body>
+
+<div class="container">
+    
+    <form action="AOption.html" method="POST">
+
+
+        <div class="form-group">
+            <input type="text" id="email" name="email" placeholder="Email id" required style="font-style: italic; font-weight: bold;">
+        </div>
+        <div class="form-group">
+            <input type="text" id="Password" name="Passenger" placeholder="Password" required  style="font-style: italic; font-weight: bold;">
+        </div>
+        <div class="form-group">
+            <button type="submit">Login</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

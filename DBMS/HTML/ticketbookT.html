@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticket Details</title>
+<style>
+
+body {
+        background-image: url('ticket.jpg'); 
+        background-size: cover;
+        background-position: center; 
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        margin: 0; 
+        padding: 0; 
+        background-repeat: no-repeat;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .action-buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .action-buttons button {
+        padding: 10px 20px;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px; 
+        background-color:gold;
+        color: black;
+        border-radius: 4px; 
+        cursor: pointer;
+        border: 2px solid black; 
+        border-radius: 4px; 
+        width: 200px; 
+        
+    
+    }
+</style>
+</head>
+<body>
+
+<h2>Ticket Details</h2>
+
+<table id="stationTable">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th> Middlename</th>
+            <th>Lastname</th>
+            <th>From</th>
+            <th> To</th>
+            <th>Arrival Date</th>
+            <th>Arrival Time</th>
+            <th> Departure Date</th>
+            <th>Departure Time</th>
+            <th>Passenger Id</th>
+            <th>Seat No</th>
+            <th>Train No</th>
+            <th>Seat Type</th>
+            <th>Price</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+     <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody> 
+</table>
+
+<div class="action-buttons">
+    <button onclick="addStation()">Book Here</button>
+</div>
+<div class="action-buttons">
+    <button onclick="ViewStation()">View Ticket Details</button>
+</div>
+
+
+<script>
+
+    function addStation() {
+    
+        window.location.href = "ticketbook.html";
+    }
+    function ViewStation() {
+        
+        window.location.href = "tiview.php";
+    }
+</script>
+
+</body>
+</html>
+<button onclick="window.location.href = 'AOption.html' "style="padding: 10px 30px;font-weight:bold; font-size: 18px; background-color: white; color: darkred; border: 3px solid black; border-radius: 4px; cursor: pointer;">Back</button>
+
+
+
